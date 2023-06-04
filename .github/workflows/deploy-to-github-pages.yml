@@ -1,14 +1,39 @@
-name: Build Nuxt
-on: [push]
+name: Deploy to Github Pages
+"on":
+  push:
+    branches:
+      - main
 jobs:
-  build_vue:
+  deploy:
     runs-on: ubuntu-latest
-    name: Build Nuxt
+
     steps:
-    - uses: actions/checkout@v2
-    - id: Build-Vue
-      uses: DaveSaah/NuxtToGithubPages@latest
-      with:
-        username: 'DaveSaah'
-        reponame: 'portfolio'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+      - name: Git Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+
+      - name: Build project
+        run: pnpm build
+
+      - name: Generate static files
+        run: pnpm generate
+
+      - name: Move static files to gh-pages
+        run: |
+          pnpm install
+          pnpm build
+          pnpm generate
+          cd dist
+          git config --global user.email "dasorange.hope@gmail.com"
+          git config --global user.name "David Saah"
+          git init
+          git add -A
+          git commit -m "Deploy to pages"
+          git push -f https://DaveSaah:${{ secrets.GITHUB_TOKEN }}@github.com/DaveSaah/porfolio.git master:gh-pages
+        shell: bash
