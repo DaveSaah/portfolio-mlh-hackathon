@@ -1,6 +1,6 @@
 # portfolio
 
-Hack your portfolio challenge.
+This is my project for Hack Your Portfolio challenge organised by MLHacks.
 
 ## Technologies Used
 
@@ -9,4 +9,4 @@ Hack your portfolio challenge.
 - Tailwind CSS
 - Firebase for deployment
 
-> **NOTE: Github pages environment is not in use!!!**
+> Demo Video: <https://youtu.be/FoD60iIa3FY>
