@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: DaveSaah/NuxtToGithubPages@v1.0
+      uses: DaveSaah/NuxtToGithubPages@latest
       with:
         username: 'DaveSaah'
         reponame: 'portfolio'
