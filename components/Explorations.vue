@@ -11,6 +11,7 @@ const items = [
       "https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white",
       "https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=b38600",
       "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white",
+      "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
     ],
   },
   {
@@ -30,6 +31,7 @@ const items = [
       "https://img.shields.io/badge/Linux-white?style=for-the-badge&logo=linux&logoColor=black",
       "https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase",
       "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
+      "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
     ],
   },
   {
