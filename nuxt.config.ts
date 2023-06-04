@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { name: "og:description", content: "David Saah's Portfolio" },
         { name: "og:title", content: "DaveSaah ~ Portfolio" },
         { name: "og:image", content: "/images/computer.svg" },
-        { name: "og:url", content: "http://localhost:3000" },
+        { name: "og:url", content: "https://davesaah.github.io/portfolio" },
       ],
       htmlAttrs: {
         lang: "en",
