@@ -8,6 +8,9 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
+      - name: Install pnpm
+        run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+
       - uses: actions/checkout@v3
       - run: pnpm install && pnpm build && pnpm generate
       - uses: FirebaseExtended/action-hosting-deploy@v0

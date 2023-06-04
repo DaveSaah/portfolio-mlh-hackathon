@@ -9,7 +9,11 @@ name: Deploy to Firebase Hosting on merge
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Install pnpm
+        run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+
       - uses: actions/checkout@v3
       - run: pnpm install && pnpm build && pnpm generate
       - uses: FirebaseExtended/action-hosting-deploy@v0
