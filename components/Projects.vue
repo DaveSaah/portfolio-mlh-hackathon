@@ -92,12 +92,13 @@ const projects = [
     <h1 class="text-4xl mb-6">Projects</h1>
     <div class="grid grid-cols-4 gap-3">
       <div v-for="item in projects">
-        <ProjectCard
+        <Card
           :title="item.title"
           :body="item.body"
           :link="item.link"
           :color="item.color"
           :lang="item.lang"
+          icon="iconoir:github"
         />
       </div>
     </div>
