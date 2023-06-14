@@ -20,7 +20,7 @@ const socials = [
   },
   {
     title: "Twitter",
-    link: "https://twitter.com/davesaah",
+    link: "https://twitter.com/dave_saah",
     icon: "devicon:twitter",
     body: "Find out about my other interests",
   },
