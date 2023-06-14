@@ -4,6 +4,7 @@ const navlinks = ref([
   { id: "#about", label: "About", clicked: false },
   { id: "#projects", label: "Projects", clicked: false },
   { id: "#explore", label: "Explorations", clicked: false },
+  { id: "#socials", label: "Socials", clicked: false },
 ]);
 
 function toggle(navLabel: string) {

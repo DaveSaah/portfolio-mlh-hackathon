@@ -15,6 +15,9 @@
       <div id="explore">
         <LazyExplorations/>
       </div>
+      <div id="socials">
+        <Socials />
+      </div>
     </div>
     <div
       class="fixed z-20 top-[20rem] bottom-0 right-[max(0px,calc(50%-70rem))] w-[15rem] py-10 overflow-y-auto hidden xl:block"
